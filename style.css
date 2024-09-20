@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Manrope;
+  font-weight: 800;
+}
+
+body {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(218, 23%, 16%);
+}
+body main {
+  margin-bottom: 60px;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: hsl(217, 19%, 24%);
+  text-align: center;
+  width: 60%;
+  min-width: 500px;
+  max-width: 650px;
+  height: 40vh;
+  min-height: 360px;
+  max-height: 500px;
+  position: relative;
+}
+body main p {
+  font-size: 14px;
+  color: hsl(150, 100%, 66%);
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin-bottom: 40px;
+}
+body main h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  color: hsl(193, 38%, 86%);
+  height: 50%;
+  margin-bottom: 40px;
+}
+body main img {
+  width: 100%;
+}
+body main button {
+  padding: 16px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: hsl(150, 100%, 66%);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px;
+}
+body main button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px -2px hsl(150, 100%, 66%), 0 0 10px 8px hsl(217, 19%, 38%);
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 20px 0;
+  }
+  body main {
+    padding: 30px;
+    width: 80%;
+    min-width: 260px;
+    max-width: 400px;
+    height: auto;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    max-height: 600px;
+  }
+  body main p {
+    margin-bottom: 30px;
+  }
+  body main h1 {
+    height: auto;
+    margin-bottom: 20px;
+  }
+  body main img {
+    margin-bottom: 20px;
+  }
+  body main button {
+    padding: 12px;
+    width: 46px;
+    height: 46px;
+    bottom: -23px;
+  }
+}/*# sourceMappingURL=style.css.map */

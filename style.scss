@@ -1,0 +1,116 @@
+$light_cyan: hsl(193, 38%, 86%);
+$neon_green: hsl(150, 100%, 66%);
+$grayish_blue: hsl(217, 19%, 38%);
+$dark_grayish_blue: hsl(217, 19%, 24%);
+$dark_blue: hsl(218, 23%, 16%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Manrope;
+    font-weight: 800;
+}
+
+body {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: $dark_blue;
+
+    main {
+        margin-bottom: 60px;
+        padding: 40px;
+        border-radius: 20px;
+        background-color: $dark_grayish_blue;
+        text-align: center;
+
+        width: 60%;
+        min-width: 500px;
+        max-width: 650px;
+        height: 40vh;
+        min-height: 360px;
+        max-height: 500px;
+        position: relative;
+
+        p {
+            font-size: 14px;
+            color: $neon_green;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+            color: $light_cyan;
+            height: 50%;
+            margin-bottom: 40px;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        button {
+            padding: 16px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: none;
+            background-color: $neon_green;
+
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -30px;
+
+            &:hover {
+                cursor: pointer;
+                box-shadow: 0 0 10px -2px $neon_green, 0 0 10px 8px $grayish_blue;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px) {
+    body {
+        padding: 20px 0;
+
+        main {
+            padding: 30px;
+            width: 80%;
+            min-width: 260px;
+            max-width: 400px;
+            height: auto;
+            min-height: fit-content;
+            max-height: 600px;
+
+            p {
+                margin-bottom: 30px;
+            }
+
+            h1 {
+                height: auto;
+                margin-bottom: 20px;
+            }
+
+            img {
+                margin-bottom: 20px;
+            }
+
+            button {
+                padding: 12px;
+                width: 46px;
+                height: 46px;
+                bottom: -23px;
+            }
+        }
+    }
+}
